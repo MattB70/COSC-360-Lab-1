@@ -8,32 +8,35 @@
     <meta charset="utf-8">
     <title>COSC 360-Lab 1</title>
 
-    <h1>COSC 360</h1>
-    <h2>Lab 1 - HTML</h2>
-
-    <nav>
-        <ul>
-            <li><a href="#Description">Description</a></li>
-            <li><a href="#Related Photos">Related Photos</a></li>
-            <li><a href="#Reviews">Reviews</a></li>
-        </ul>
-    </nav>
-
 </head>
 
 
 
 <body>
 
+
+    <h1>COSC 360</h1>
+    <h2>Lab 1 - HTML</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#Description">Description</a></li>
+            <li><a href="#RelatedPhotos">Related Photos</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+        </ul>
+    </nav>
+
+
+
     <section>
 
         <header>
-            <a name="Description">
+            <a id="Description">
                 <h3>Description</h3>
             </a>
         </header>
-        <p>Photo by Myrians-Fotos</p>
-        <p>This photo of ice crystals on branch. The image is from <a href="https://www.pixabay.com/">Pixabay</a>, and was taken with a Canon EOS 650D camera.</p>
+        <p>Photo by Myriams-Fotos</p>
+        <p>This photo of ice crystals on a branch. The image is from <a href="https://www.pixabay.com/">Pixabay</a>, and was taken with a Canon EOS 650D camera.</p>
         <figure>
             <a href="images/eiskristalle-1938842_640.jpg">
                 <img src="images/eiskristalle-1938842_640.jpg" alt="Ice crystals on a branch">
@@ -41,11 +44,11 @@
             <figcaption><i>Ice crystals on a branch</i></figcaption>
         </figure>
         <p>Share:
-            <img src="images/social/email_16.png">
-            <img src="images/social/rss_16.png">
-            <img src="images/social/twitter_16.png">
-            <img src="images/social/facebook_16.png">
-            <img src="images/social/flickr_16.png">
+            <img src="images/social/email_16.png" alt="Email this to someone">
+            <img src="images/social/rss_16.png" alt="Syndicated content">
+            <img src="images/social/twitter_16.png" alt="Share this on Twitter">
+            <img src="images/social/facebook_16.png" alt="Share this on Facebook">
+            <img src="images/social/flickr_16.png" alt="See this on Flickr">
         </p>
 
     </section>
@@ -55,10 +58,24 @@
     <section>
 
         <header>
-            <a name="Related Photos">
+            <a id="RelatedPhotos">
                 <h3>Related Photos</h3>
             </a>
         </header>
+        <div>
+            <a href="images/frost-490807_640.jpg">
+                <!--100px errors in W3-->
+                <img src="images/frost-490807_640.jpg" alt="related photo" height="100">
+            </a>
+            <a href="images/ice-crystal-64157_640.jpg">
+                <!--100px errors in W3-->
+                <img src="images/ice-crystal-64157_640.jpg" alt="related photo" height="100">
+            </a>
+            <a href="images/hoarfrost-639980_640.jpg">
+                <!--100px errors in W3-->
+                <img src="images/hoarfrost-639980_640.jpg" alt="related photo" height="100">
+            </a>
+        </div>
 
     </section>
 
@@ -67,13 +84,34 @@
     <section>
 
         <header>
-            <a name="Reviews">
+            <a id="Reviews">
                 <h3>Reviews</h3>
             </a>
         </header>
-        <p>By Bob on January 11, 2017</p>
-        <p>Those are some nice ice photos.</p>
+        <div>
+            <p>By Bob on <time datetime="2017-01-11 00:00">January 11, 2017</time></p>
+            <p>Those are some nice ice photos.</p>
+        </div>
+        <hr>
+        <div>
+            <p>By Alice on <time datetime="2016-08-01 00:00">October 1, 2016</time></p>
+            <p>Beautiful photos.</p>
+        </div>
+        <hr>
 
     </section>
+
+
+    <footer>
+        <nav>
+            <a href="#Home">Home</a> |
+            <a href="#Browse">Browse</a> |
+            <a href="#Search">Search</a>
+        </nav>
+        <p><i>Copyright &copy; 2021 COSC Lab 1</i></p>
+    </footer>
+    <hr size="1">
+
+
 
 </body>
